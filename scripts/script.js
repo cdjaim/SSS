@@ -1,0 +1,10 @@
+picsCarousel = new Array(9);
+picsCarousel[0] = './imatges/bannercarousel11.png';
+picsCarousel[1] = './imatges/bannercarousel12.png';
+picsCarousel[2] = './imatges/bannercarousel13.png';
+picsCarousel[3] = './imatges/bannercarousel21.png';
+picsCarousel[4] = './imatges/bannercarousel22.png';
+picsCarousel[5] = './imatges/bannercarousel23.png';
+picsCarousel[6] = './imatges/bannercarousel31.png';
+picsCarousel[7] = './imatges/bannercarousel32.png';
+picsCarousel[8] = './imatges/bannercarousel33.png';
