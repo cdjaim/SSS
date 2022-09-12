@@ -60,34 +60,12 @@ a, p, .title, .sub-title {
 }
 
 .title, .sub-title{
-    color: red;
+    color: #ff010b;
 }
 
 .title:hover, .sub-title:hover {
     color: black;
     transition: .5s;
-}
-
-@-webkit-keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(calc(-250px * 7));
-        transform: translateX(calc(250px * 7));
-    }
-}
-
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(calc(-250px * 7));
-        transform: translateX(calc(-250px * 7));
-    }
 }
 
 #footer {
@@ -101,14 +79,14 @@ a, p, .title, .sub-title {
     }
 
     .navbar-brand {
-        color: red;
+        color: white;
     }
     
     #top-header {
         background-color: white;
         width: 100%;
         max-width: 100%;
-        height: 56px;
+        height: 65px;
         text-align: center;
         align-items: center;
         display: grid;
@@ -127,9 +105,9 @@ a, p, .title, .sub-title {
 
     .logo-sss {
         grid-column: 1/2;
-        width: 50px;
+        width: 60px;
         min-width: none;
-        max-width: 56px;
+        max-width: 66px;
         padding: 5px;
     }
 
@@ -138,74 +116,32 @@ a, p, .title, .sub-title {
         top: 50%;
         line-height: normal;
         grid-column: 2/6;
+        font-style: oblique;
     }
 
     #nav-bar-container {
-        padding-top: 57px;
+        padding-top: 66px;
     }
 
     #long-nav-bar-container {
         display: none;
     }
 
-    #carousel {
+    .nav-link {
+        color: white;
+    }
+
+    .img-principal {
+        margin: 2% 0 0 0;
+        max-width: 100%;
+    }  
     
-        height: 200px;
-        padding: 2%;
-        overflow: hidden;
+    .hr-img {
+        background-color: #ff010b;
+        color: #ff010b;
+        height: .3rem;
         position: relative;
-        width: 100%;
-    }
-    
-    #carousel::before, #carousel::after {
-        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 15%);
-        content: "";
-        height: 200px;
-        position: absolute;
-        width: 200px;
-        z-index: 2;
-    }
-    
-    #carousel::after {
-        right: 0;
-        top: 0;
-        -webkit-transform: rotateZ(180deg);
-        transform: rotateZ(180deg);
-    }
-    
-    #carousel::before {
-        left: 0;
-        top: 0;
-    }
-    
-    #carousel .tracks {
-        -webkit-animation: scroll 30s linear infinite;
-        animation: scroll 30s linear infinite;
-        display: flex;
-        height: 200px;
-        width: calc(250px * 14);
-    }
-    
-    #carousel .slice {
-        height: 200px;
-    }    
-    
-    #principal-content {
-        text-align: center;
-    }
-
-    #content {
-        text-align: center;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #principal-content .title {
-        padding-top: 15px;
-    }
-
-    #logo-sss {
-        width: 15%;
+        top: -20px;
     }
 
     .title {
@@ -229,7 +165,26 @@ a, p, .title, .sub-title {
         
     }
 
-    
+    #principal-content {
+        text-align: center;
+        position: relative;
+        margin: 5px 0 5px 0;
+        top: -25px;
+    }
+
+    #content {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #principal-content .title {
+        padding-top: 15px;
+    }
+
+    #logo-sss {
+        width: 15%;
+    }    
 
     .float-social-networks {
         width: 180px;
@@ -249,128 +204,22 @@ a, p, .title, .sub-title {
 
     .float-facebook {
         width: 52px;
-        max-width: 56px;
-    
+        max-width: 56px;    
     }
 
     .float-instagram {
         width: 52px;
-        max-width: 56px;
-        
+        max-width: 56px;        
     }
 
     .float-twitter {
         width: 52px;
-        max-width: 56px;
-        
+        max-width: 56px;        
     }
 
     .imagen {
         width: 100%;
         position: relative;
-    }
-
-    #sec1 {
-        margin: 1px;
-        padding: 2px;
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(17, 50px);
-        text-align: center;
-    }
-
-    #sec1 h3 {
-        grid-row: 1/2;
-    }
-
-    .sec11 {
-        grid-row: 2/6;
-        background-image: url(../imatges/Consulta\ mèdica\ fixe.png);
-        background-position: center;
-        background-size: cover;
-        border: 1px;
-        border-style: solid;
-        border-color: red;
-        border-radius: 5px;
-        margin: 2px;
-    }
-
-    .sec12 {
-        grid-row: 6/10;
-        background-image: url(../imatges/Unitat\ Mòbil\ Sanitària.jpg);
-        background-position: center;
-        background-size: cover;
-        border: 1px;
-        border-style: solid;
-        border-color: red;
-        border-radius: 5px;
-        margin: 2px;
-    }
-
-    .sec13 {
-        grid-row: 10/14;
-        background-image: url(../imatges/Simposis.jpg);
-        background-position: center;
-        background-size: cover;
-        border: 1px;
-        border-style: solid;
-        border-color: red;
-        border-radius: 5px;
-        margin: 2px;
-    }
-
-    .sec14 {
-        grid-row: 14/18;
-        background-image: url(../imatges/Salut\ i\ Esport.jpg);
-        background-position: center;
-        background-size: cover;
-        border: 1px;
-        border-style: solid;
-        border-color: red;
-        border-radius: 5px;
-        margin: 2px;
-    }
-
-    #sec-instagram, #sec-twitter {
-        margin: 1px;
-        padding: 2px;
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, 50px);
-        text-align: center;
-    }
-
-    #sec-instagram h3, #sec-twitter h3 {
-        grid-row: 1/2;
-    }
-
-    .publication1 {
-        grid-row: 2/5;
-        border: 3px;
-        border-style: solid;
-        border-color: red;
-        border-radius: 5px;
-        margin: 2px;
-    }
-
-    .publication2 {
-        grid-row: 5/8;
-        border: 3px;
-        border-style: solid;
-        border-color: red;
-        border-radius: 5px;
-        margin: 2px;
-    }
-
-    .publication3 {
-        grid-row: 8/11;
-        border: 3px;
-        border-style: solid;
-        border-color: red;
-        border-radius: 5px;
-        margin: 2px;
     }
 }
 
