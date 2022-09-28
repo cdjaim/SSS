@@ -164,6 +164,10 @@ a, p, .title, .sub-title {
        padding: 10%;       
     }
 
+    #content .title {
+        font-size: 20px;
+    }
+
     .sub-title {
         font-size: 25px;
         position: relative;
@@ -175,13 +179,6 @@ a, p, .title, .sub-title {
         font-size: 15px;
         position: relative;
         text-align: left;        
-    }
-
-    #principal-content {
-        text-align: center;
-        position: relative;
-        margin: 5px 0 5px 0;
-        top: -25px;
     }
 
     #content {
@@ -331,20 +328,6 @@ a, p, .title, .sub-title {
         position: relative;
     }
     
-    #principal-content {
-        margin-top: 3%;
-        margin-right: 10%;
-        margin-left: 10%;
-        position: relative;
-        text-align: center;       
-    }
-
-    .img-principal{
-        position: relative;
-        width: 100%;
-        max-width: 100%;
-    }
-
     .title {
         padding: 2%;
         font-size: 2rem;
@@ -354,22 +337,32 @@ a, p, .title, .sub-title {
         padding: 10px;
         font-size: 1.8rem;
     }
-
+    
     .major-text {
         padding: 3%;
         font-size: 1.5rem;
         text-align: left;
     }
-
+    
     .imagen {
-        width: 60%;
+        height: 100%;
         position: relative;
     }
-
+    
     #content {
         margin-top: 3%;
         position: relative;
         text-align: center;        
+    }
+    
+    #content .title {
+        font-size: 1.8rem;
+    }
+
+    .sub-content {
+        display: grid;
+        grid-template-columns: repeat(2, 30% 70%);
+        grid-template-rows: 25vh;
     }
 
    .float-social-networks {

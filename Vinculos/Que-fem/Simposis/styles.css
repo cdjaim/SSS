@@ -113,8 +113,9 @@ a, p, .title, .sub-title {
     .idioma a {
         text-decoration: none;
     }
-
+    
     .logo-sss {
+        width: 15%;
         grid-column: 1/2;
         width: 60px;
         min-width: none;
@@ -164,6 +165,10 @@ a, p, .title, .sub-title {
        padding: 10%;       
     }
 
+    #content .title {
+        font-size: 20px;
+    }
+
     .sub-title {
         font-size: 25px;
         position: relative;
@@ -192,11 +197,7 @@ a, p, .title, .sub-title {
 
     #principal-content .title {
         padding-top: 15px;
-    }
-
-    #logo-sss {
-        width: 15%;
-    }    
+    }  
 
     .float-social-networks {
         width: 180px;
@@ -328,10 +329,6 @@ a, p, .title, .sub-title {
         justify-content: start;
     }
 
-    .img-principal {
-        display: none;
-    }
-
     .separator {
         background-color: #ff010b;
         width: 100%;
@@ -339,20 +336,6 @@ a, p, .title, .sub-title {
         height: .3rem;
         max-height: .3rem;
         position: relative;
-    }
-    
-    #principal-content {
-        margin-top: 3%;
-        margin-right: 10%;
-        margin-left: 10%;
-        position: relative;
-        text-align: center;       
-    }
-
-    .img-principal{
-        position: relative;
-        width: 100%;
-        max-width: 100%;
     }
 
     .title {
@@ -364,24 +347,34 @@ a, p, .title, .sub-title {
         padding: 10px;
         font-size: 1.8rem;
     }
-
+    
     .major-text {
         padding: 3%;
         font-size: 1.5rem;
         text-align: left;
     }
-
+    
     .imagen {
-        width: 60%;
+        height: 100%;
         position: relative;
     }
-
+    
     #content {
         margin-top: 3%;
         position: relative;
         text-align: center;        
     }
     
+    #content .title {
+        font-size: 1.8rem;
+    }
+
+    .sub-content {
+        display: grid;
+        grid-template-columns: repeat(2, 30% 70%);
+        grid-template-rows: 25vh;
+    }
+
    .float-social-networks {
         width: 180px;
         max-width: 180px;

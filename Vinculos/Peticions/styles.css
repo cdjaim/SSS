@@ -155,7 +155,7 @@ a, p, .title, .sub-title, h3 {
         background-color: #ff010b;
         height: .1rem;
         position: relative;
-        top: -5px;
+        top: 0;
     }
     
     .title {
@@ -188,6 +188,7 @@ a, p, .title, .sub-title, h3 {
         text-align: center;
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 5%;
     }
     
     .float-social-networks {
@@ -359,7 +360,7 @@ a, p, .title, .sub-title, h3 {
     }
 
     .imagen {
-        width: 60%;
+        width: 45%;
         position: relative;
     }
 

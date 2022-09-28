@@ -1,0 +1,454 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: font_aileron;
+    font-style: normal;
+    font-weight: normal;
+    src: url(/fonts/aileron.regular.otf);
+}
+
+a, p, .title, .sub-title {
+    font-family: font_aileron;
+}
+
+.title, .sub-title{
+    color: red;
+}
+
+.title:hover, .sub-title:hover {
+    color: black;
+    transition: .5s;
+}
+
+#footer {
+    text-align: center;
+}
+
+@media (max-width: 719.9px) {
+
+    .logo-menu {
+        width: 35px;
+    }
+
+    .navbar-brand {
+        color: white;
+    }
+    
+    #top-header {
+        background-color: white;
+        width: 100%;
+        max-width: 100%;
+        height: 80px;
+        text-align: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        position: fixed;
+        top: 0;
+        z-index: 3;        
+    }
+
+    .spa-icon {
+       grid-column: 6/7;
+       width: 40px;
+       max-width: 40px;
+       padding-left: 5px;    
+    }
+    
+    .cat-icon {
+        grid-column: 6/7;
+        width: 37px;
+        max-width: 37px;
+        padding-left: 5px; 
+    }
+    
+    .idioma a {
+        text-decoration: none;
+    }
+
+    .logo-sss {
+        grid-column: 1/2;
+        width: 60px;
+        min-width: none;
+        max-width: 66px;
+        padding: 5px;
+    }
+
+    .text-band {
+        text-align: center;
+        top: 50%;
+        line-height: normal;
+        grid-column: 2/6;
+        font-style: oblique;
+    }
+
+    #nav-bar-container {
+        margin-top: 81px;
+    }
+
+    #long-nav-bar-container {
+        display: none;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .img-principal {
+        margin: 2% 0 0 0;
+        max-width: 100%;
+    }  
+
+    .img-principal-desk {
+        display: none;
+    }
+    
+    .separator {
+        background-color: #ff010b;
+        height: .1rem;
+        position: relative;
+        top: -5px;
+    }
+    
+    .title {
+       font-size: 30px;
+       position: relative;
+       padding: 10%;       
+    }
+
+    .sub-title {
+        font-size: 25px;
+        position: relative;
+        padding-top: 10px;
+    }
+
+    .major-text {
+        padding: 5%;
+        font-size: 15px;
+        position: relative;
+        text-align: left;        
+    }
+
+    #principal-content {
+        text-align: center;
+        position: relative;
+        margin: 5px 0 5px 0;
+        top: -25px;
+    }
+
+    #content {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }    
+
+    .float-social-networks {
+        width: 180px;
+        max-width: 180px;
+        height: 60;
+        max-height: 60px;
+        
+        position: relative;
+        
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        margin: auto;
+
+        transition: all 1000ms ease;
+    }
+
+    .float-facebook {
+        width: 52px;
+        max-width: 56px;
+    
+    }
+
+    .float-instagram {
+        width: 52px;
+        max-width: 56px;
+        
+    }
+
+    .float-twitter {
+        width: 52px;
+        max-width: 56px;
+        
+    }
+
+    .imagen {
+        width: 100%;
+        position: relative;
+    }
+
+    
+}
+
+@media (min-width: 720px) {
+
+    #top-header {
+        top: 0;
+        background-color: white;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 1.3rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        position: fixed;
+        z-index: 3;
+        height: 120px;
+        max-height: 120px;
+    }
+
+    .logo-sss{
+        padding: 10px 5px 5px 5px;
+        width: 90px;
+        max-width: 90px;
+        grid-column: 1/2;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .text-band {
+        text-align: center;
+        grid-column: 2/6;
+        font-size: 2rem;
+        font-style: oblique;
+    }
+
+    .spa-icon {
+        grid-column: 6/7;
+        position: relative;
+        width: 50px;
+        max-width: 50px;
+        margin: auto;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .cat-icon {
+        grid-column: 6/7;
+        position: relative;
+        width: 47px;
+        max-width: 47px;
+        margin: auto;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .idioma a {
+        text-decoration: none;
+    }
+
+    #nav-bar-container {
+        display: none;
+    }
+
+    #long-nav-bar-container {
+        margin-top: 121px;
+        width: 100%;
+        height: 50px;
+        max-height: 50px;
+        position: relative;     
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .fsizelink {
+        font-size: 1.3rem;
+    }
+
+    .principal-imatge {
+        margin: 25px 0 0 0;
+        position: relative;
+        display: flex;
+        line-height: 0;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .img-principal {
+        display: none;
+    }
+
+    .separator {
+        background-color: #ff010b;
+        width: 100%;
+        max-width: 100%;
+        height: .3rem;
+        max-height: .3rem;
+        position: relative;
+    }
+    
+    #principal-content {
+        margin-top: 3%;
+        margin-right: 20%;
+        margin-left: 20%;
+        position: relative;
+        text-align: center;      
+    }
+
+    
+    .img-principal{
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .title {
+        padding: 2%;
+        font-size: 2rem;
+    }
+    
+    .sub-title {
+        padding: 10px;
+        font-size: 1.8rem;
+    }
+    
+    .major-text {
+        padding: 3%;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    
+    .imagen {
+        width: 60%;
+        position: relative;
+    }
+    
+    #content {
+        margin-top: 3%;
+        position: relative;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(3, 33%);
+        align-items: center; 
+        text-align: center;        
+    }
+    
+    .imagen1 {
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .imagen2 {
+        width: 60%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .imagen3 {
+        width: 70%;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .imagen4 {
+        height: 100%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .imagen5 {
+        width: 90%;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .imagen6 {
+        width: 70%;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .imagen7 {
+        width: 70%;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .imagen8 {
+        width: 70%;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .imagen9 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    
+   .float-social-networks {
+        width: 180px;
+        max-width: 180px;
+        height: 60px;
+        max-height: 60px;
+        text-align: center;
+        align-items: center;
+        left: 0;
+        right: 0;   
+        margin: auto;
+    }
+
+   .float-facebook, .float-instagram, .float-twitter {
+        width: 50px;
+    }
+}
